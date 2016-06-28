@@ -48,6 +48,6 @@ public class CountBits {
         arr = countBits2(num);
         for (int i : arr) {
             System.out.println(i);
-        }
+        }//
     }
 }
