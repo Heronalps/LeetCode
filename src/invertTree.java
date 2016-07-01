@@ -1,3 +1,6 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * Created by michael.zhang on 6/29/2016.
  */
@@ -11,15 +14,38 @@ public class invertTree {
         alt_root.right = invertTree(root.left);
         return alt_root;
     }
-        public static TreeNode invertTree2(TreeNode root) {
-            if (root == null) {
-                return null;
-            }
-            TreeNode tempnode = invertTree2(root.right);
-            root.right = invertTree2(root.left);
-            root.left = tempnode;
-            return root;
+    public static TreeNode invertTree2(TreeNode root) {
+        if (root == null) {
+            return null;
         }
+        TreeNode tempnode = invertTree2(root.right);
+        root.right = invertTree2(root.left);
+        root.left = tempnode;
+        return root;
+    }
+
+    //Iterative Solution
+    public TreeNode invertTree3(TreeNode root) {
+        if (root == null) {
+            return null;
+        }
+        //interface is implemented by a class
+        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        queue.add(root);
+        while(!queue.isEmpty()) {
+            TreeNode node = queue.poll();
+            TreeNode temp = node.left;
+            node.left = node.right;
+            node.right = temp;
+            if (node.left != null) {
+                queue.add(node.left);
+            }
+            if (node.right != null) {
+                queue.add(node.right);
+            }
+        }
+        return root;
+    }
 
     public static void main(String[] args) {
         TreeNode root = new TreeNode(0);
