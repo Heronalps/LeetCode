@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c95f0f9b-46db-4f61-8a3f-d77f01a68c8c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maxDepth_Tree.java" afterPath="$PROJECT_DIR$/src/maxDepth_Tree.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/isSameTree.java" afterPath="$PROJECT_DIR$/src/isSameTree.java" />
     </list>
     <ignored path="LeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,17 +35,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="isSameTree.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="isSameTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/isSameTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+            <state relative-caret-position="487">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="maxDepth_Tree.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="maxDepth_Tree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/maxDepth_Tree.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
@@ -83,8 +83,8 @@
         <option value="$PROJECT_DIR$/src/IntersectionArray.java" />
         <option value="$PROJECT_DIR$/src/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/deleteNode.java" />
-        <option value="$PROJECT_DIR$/src/isSameTree.java" />
         <option value="$PROJECT_DIR$/src/maxDepth_Tree.java" />
+        <option value="$PROJECT_DIR$/src/isSameTree.java" />
       </list>
     </option>
   </component>
@@ -119,6 +119,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -154,8 +156,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -611,7 +611,14 @@
       <option name="project" value="LOCAL" />
       <updated>1467817232450</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Commit_20160712">
+      <created>1468324804717</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1468324804717</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -666,7 +673,8 @@
     <MESSAGE value="Commit_20160630_02" />
     <MESSAGE value="Commit_20160701" />
     <MESSAGE value="Commit_20160706" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit_20160706" />
+    <MESSAGE value="Commit_20160712" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit_20160712" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -679,6 +687,30 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/deleteNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isSameTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maxDepth_Tree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/deleteNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -770,9 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -795,10 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="21" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#932#942#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -886,9 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="111" column="30" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -910,10 +932,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#932#942#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maxDepth_Tree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -927,16 +953,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/isSameTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/maxDepth_Tree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        <state relative-caret-position="487">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
