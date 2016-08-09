@@ -1,13 +1,12 @@
 /**
  * Created by michael.zhang on 8/9/2016.
  */
-import java.util.Arrays.*;
 import java.util.HashMap;
 
 import static java.util.Arrays.sort;
 
 public class MajorityElement {
-    public static int majorityElement(int[] nums) {
+    public int majorityElement(int[] nums) {
         HashMap<Integer, Integer> counter = new HashMap<Integer, Integer>();
         int[] majority = {nums[0], 1};
         for (int i = 0; i < nums.length; i++ ) {
@@ -25,7 +24,9 @@ public class MajorityElement {
         return majority[0];
     }
 
-    public static int majorityElement2(int[] num) {
+    public int majorityElement2(int[] num) {
+        //Boyer-Moore Majority Voting Algorithm
+
         //因为Majority > n/2，所以major元素一定比剩余的其他元素多至少一个。
         //如果counter被抵消成零，后面必有多一个major元素，使major重新变正确。
         //这个算法运用了Majority > n/2这个性质
@@ -44,9 +45,9 @@ public class MajorityElement {
     }
 
     public static void main(String[] args) {
-        int[] nums = {3, 5, 9, 1, 1, 1, 1, 1, 1, 1, 17, 17,12, 20};
-        System.out.println(majorityElement(nums));
-        System.out.println(majorityElement2(nums));
 
+        MajorityElement m = new MajorityElement();
+        System.out.println(m.majorityElement(new int[] {3, 5, 9, 1, 1, 1, 1, 1, 1, 1, 17, 17,12, 20}));
+        System.out.println(m.majorityElement2(new int[] {3, 5, 9, 1, 1, 1, 1, 1, 1, 1, 17, 17,12, 20}));
     }
 }
