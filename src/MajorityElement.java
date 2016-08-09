@@ -44,10 +44,30 @@ public class MajorityElement {
         return major;
     }
 
+    public int majorityElement3(int[] nums) {
+
+        //先构造一个32位计数器，把每个数都转化成二进制
+        //在32位的每一位累加，如果这一位上大于数组长度的一半，就证明Majority在这位上是1
+        //把所有符合以上条件的位再转化成十进制数
+
+        int[] bit = new int[32];
+        for (int num: nums)
+            for (int i=0; i<32; i++)
+                if ((num>>(31-i) & 1) == 1)
+                    bit[i]++;
+        int ret=0;
+        for (int i=0; i<32; i++) {
+            bit[i]=bit[i]>nums.length/2?1:0;
+            ret += bit[i]*(1<<(31-i));
+        }
+        return ret;
+    }
+
     public static void main(String[] args) {
 
         MajorityElement m = new MajorityElement();
         System.out.println(m.majorityElement(new int[] {3, 5, 9, 1, 1, 1, 1, 1, 1, 1, 17, 17,12, 20}));
         System.out.println(m.majorityElement2(new int[] {3, 5, 9, 1, 1, 1, 1, 1, 1, 1, 17, 17,12, 20}));
+
     }
 }
