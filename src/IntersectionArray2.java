@@ -10,7 +10,7 @@ public class IntersectionArray2 {
         Arrays.sort(nums2);
 
         int index = 0, i = 0, j = 0;
-        int[] temp = new int[nums1.length > nums2.length ? nums1.length : nums2.length];
+        int[] temp = new int[nums1.length > nums2.length ? nums2.length : nums1.length]; //短数组长度是交集的最大长度
         while (i < nums1.length && j < nums2.length) {
             if (nums1[i] == nums2[j]) {
                 temp[index++] = nums1[i];
@@ -23,11 +23,12 @@ public class IntersectionArray2 {
             }
         }
 
-        int[] result = new int[index];
+        /*int[] result = new int[index];
         for (int k = 0; k < index; k++) {
             result[k] = temp[k];
         }
-        return result;
+        return result; */
+        return Arrays.copyOfRange(temp, 0, index);
     }
 
     public static void main(String[] args) {
