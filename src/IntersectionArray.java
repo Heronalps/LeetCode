@@ -16,7 +16,7 @@ public class IntersectionArray {
         int[] temp = new int[nums1.length];
         while (i < nums1.length && j < nums2.length) {
             if (nums1[i] == nums2[j]) {
-                if (index == 0 || (temp[index - 1] != nums1[i])) {
+                if (index == 0 || (temp[index - 1] != nums1[i])) { //此判断条件实现去除重复结果
                     temp[index++] = nums1[i];
                 }
                 i++;
