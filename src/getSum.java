@@ -48,9 +48,46 @@ public class getSum {
         return and ^ or ^ xor;
     }
 
+    public int getSum2(int a, int b) {
+        //基本思想是把当前位和进位分别计算,然后递归调用
+
+        if (b == 0) {
+            return a;
+        } //不仅是Base Case, 也是边界检查, 妙!
+        else {
+            int sum = a ^ b;
+            int carryover = (a & b) << 1;
+            return getSum2(sum, carryover);
+        }
+    }
+
+    public int getSum3(int a, int b) {
+        int mask = 1;//bit mask to get every bit of a,b
+        int result = 0;
+        int carryBit = 0;
+        for (int i = 0; i < 32; i++)
+        {
+            int num1 = a & mask;
+            int num2 = b & mask;
+            result |= num1 ^ num2 ^ carryBit;
+            //每次Result和当前异或结果做"与运算"
+
+            if ((num1 & num2) !=0 || (num1 & carryBit)!=0 || (num2 & carryBit)!=0)
+                //if two of three numbers(num1,num2,carryBit) in current bit are 1,that makes a carry,for example,0010+0010+00010 makes a carry in 2th bit
+                carryBit |= (num1 == 1 ? num1 : num2);
+            else
+                carryBit = 0;
+            mask = mask << 1;
+            //mask每次左移一位,实现了按位取值
+
+            carryBit = carryBit << 1;
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
         getSum myExample = new getSum();
-        System.out.println(myExample.getSum(29, 5));
+        System.out.println(myExample.getSum3(13, 15));
     }
 
 }
