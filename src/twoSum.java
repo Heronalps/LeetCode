@@ -1,5 +1,4 @@
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by michaelzhang on 9/3/16.
@@ -47,26 +46,46 @@ public class twoSum {
         throw new IllegalArgumentException("No Summary solution found!");
     }
 
-    public int[] twoSum3(int[] nums, int target) {
+    public int[] twoSum3(int[] numbers, int target) {
         //One-pass Hash Table
         //边插入HashMap边查找: 定一点,向后找
 
         Map<Integer, Integer> indexMap = new HashMap<>();
-        for (int i = 0; i < nums.length; i++ ) {
-            int complement = target - nums[i];
+        for (int i = 0; i < numbers.length; i++ ) {
+            int complement = target - numbers[i];
             if (indexMap.containsKey(complement)) {
-                return new int[] {indexMap.get(complement), i};
+                return new int[] {indexMap.get(complement) + 1, i + 1};
             } else {
-                indexMap.put(nums[i], i);
+                indexMap.put(numbers[i], i);
             }
         }
         throw new IllegalArgumentException("No summary solution found!");
     }
 
+    public int[] twoSum4(int[] numbers, int target) {
+        //因为是Sorted Array，所以设置两个指针相向而行，两个数的和，变大或者变小可控。
+        int start = 0;
+        int end = numbers.length - 1;
+        while (start < end) {
+            int sum = numbers[start] + numbers[end];
+            if (sum == target) {
+                return new int[] {start + 1, end + 1};
+            }
+            else if (sum > target){
+                end--;
+            }
+            else {
+                start++;
+            }
+        }
+
+        throw new IllegalArgumentException("No Solution!");
+    }
+
     public static void main(String[] args) {
-        int[] myArray = {3, 2, 4};
+        int[] myArray = {0, 0, 2, 2, 3};
         twoSum myApp = new twoSum();
-        int[] result = myApp.twoSum3(myArray, 6);
+        int[] result = myApp.twoSum4(myArray, 4);
         for (int i = 0; i < result.length; i++) {
             System.out.println(result[i]);
         }
