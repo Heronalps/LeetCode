@@ -56,9 +56,54 @@ public class singleNumber {
         throw new IllegalArgumentException("No solution found!");
     }
 
+    public int singleNumber4(int[] nums) {
+        int ans = 0;
+
+        for (int i = 0; i < 32; i++) {
+            int sum = 0;
+            for (int n : nums) {
+                if ((n >> i & 1) == 1) {
+                    sum++;
+                }
+            }
+            sum %= 3;
+            if (sum == 1){
+                ans |= sum << i;
+            } else if (sum == 2) {
+                ans |= sum/2 << i;
+            }
+        }
+        return ans;
+    }
+
+    public int[] singleNumber5(int[] nums) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int n : nums) {
+            if (map.containsKey(n)) {
+                map.put(n, map.get(n) + 1);
+            } else {
+                map.put(n, 1);
+            }
+        }
+
+        Iterator iter = map.entrySet().iterator();
+        int[] result = new int[2];
+        int index = 0;
+        while (iter.hasNext()) {
+            Map.Entry current = (Map.Entry) iter.next();
+            if ((int) current.getValue() == 1) {
+                result[index] = (int) current.getKey();
+                index++;
+            }
+        }
+        return result;
+    }
     public static void main(String[] args) {
-        int[] myArray = {1, 1, 3, 3, 1};
+        int[] myArray = {-1, -1, 3, 3, 2, 4};
         singleNumber myApp = new singleNumber();
-        System.out.println(myApp.singleNumber3(myArray));
+        System.out.println(myApp.singleNumber5(myArray)[1]);
+
+
+
     }
 }

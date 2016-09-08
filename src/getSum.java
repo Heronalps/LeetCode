@@ -73,7 +73,8 @@ public class getSum {
             //每次Result和当前异或结果做"与运算"
 
             if ((num1 & num2) !=0 || (num1 & carryBit)!=0 || (num2 & carryBit)!=0)
-                //if two of three numbers(num1,num2,carryBit) in current bit are 1,that makes a carry,for example,0010+0010+00010 makes a carry in 2th bit
+                //if two of three numbers(num1,num2,carryBit) in current bit are 1,that makes a carry,
+                // for example,0010+0010+00010 makes a carry in 2th bit
                 carryBit |= (num1 == 1 ? num1 : num2);
             else
                 carryBit = 0;

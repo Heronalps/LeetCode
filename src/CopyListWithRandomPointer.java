@@ -88,6 +88,8 @@ public class CopyListWithRandomPointer {
         copyNext(head);
         copyRandom(head);
         return splitList(head);
+
+        //之所以算法2的额外空间复杂度是O(1),是因为新链表无论如何都要被复制,所以不包括在额外空间复杂度中。
     }
 }
 
