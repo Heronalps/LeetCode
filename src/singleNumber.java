@@ -103,7 +103,5 @@ public class singleNumber {
         singleNumber myApp = new singleNumber();
         System.out.println(myApp.singleNumber5(myArray)[1]);
 
-
-
     }
 }
