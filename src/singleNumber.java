@@ -98,10 +98,33 @@ public class singleNumber {
         }
         return result;
     }
+
+    public int[] singleNumber6(int[] nums) {
+        //XOR遍历一遍,得到两个Single的XOR
+        int temp = 0;
+        for (int n : nums) {
+            temp ^= n;
+        }
+        //找到第一个为1的bit,两个Single从此处开始differ
+        int mask = -temp & temp;
+
+        //以此分组XOR,得到两single数
+        int single1 = 0, single2 = 0;
+        for (int num : nums) {
+            if ((num & mask) == 0) {
+                single1 ^= num;
+            } else {
+                single2 ^= num;
+            }
+        }
+        return new int[] {single1, single2};
+    }
+
     public static void main(String[] args) {
         int[] myArray = {-1, -1, 3, 3, 2, 4};
         singleNumber myApp = new singleNumber();
-        System.out.println(myApp.singleNumber5(myArray)[1]);
+        System.out.println(myApp.singleNumber6(myArray)[0]);
+
 
     }
 }
