@@ -45,13 +45,39 @@ public class ShuffleArray {
         return result;
     }
 
+    public int[] shuffle2() {
+        //In-place Version
+        int n = this.nums.length;
+        for (int i = 0; i < n; i++) {
+            int rand = i + (int) (Math.random() * (n - i));
+            int temp = nums[rand];
+            nums[rand] = nums[i];
+            nums[i] = temp;
+        }
+        return nums;
+    }
+
+    public int[] shuffle3() {
+        //Two array version
+        int n = this.nums.length;
+        int[] rand = new int[n];
+        for (int i = 0; i < n; i++) {
+            int r = (int) (Math.random() * (i + 1));
+            //随机抽一张,与当前元素交换
+            rand[i] = rand[r];
+            //新元素在随机元素处补上
+            rand[r] = nums[i];
+        }
+        return rand;
+    }
+
     public static void main(String[] args) {
         int[] nums = {1, 2, 3};
         ShuffleArray obj = new ShuffleArray(nums);
         for (int n : obj.reset()) {
             System.out.println(n);
         }
-        for (int n : obj.shuffle()) {
+        for (int n : obj.shuffle3()) {
             System.out.println(n);
         }
 
