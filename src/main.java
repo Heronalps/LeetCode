@@ -23,6 +23,7 @@ public class main { // implicit: public class Main extends object
             System.exit(2);
         }
 
+
         Rational r1 = new Rational();
         Rational r2 = new Rational(num, denom);
 
