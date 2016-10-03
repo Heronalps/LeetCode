@@ -6,10 +6,12 @@ import java.util.Collections;
  */
 public class Test {
     public static void main(String[] args) {
-        Integer[] result = {0,1,2,3};
+        /*Integer[] result = {0,1,2,3};
         Arrays.sort(result, Collections.reverseOrder());
         for (int i = 0; i < result.length; i++) {
             System.out.println(result[i]);
         }
+    }*/
+        System.out.println(-5 % 6);
     }
 }
