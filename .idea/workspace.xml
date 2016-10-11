@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c95f0f9b-46db-4f61-8a3f-d77f01a68c8c" name="Default" comment="Commit_20161008">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SnakeGame.java" />
+    <list default="true" id="c95f0f9b-46db-4f61-8a3f-d77f01a68c8c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LeetCode.iws" />
@@ -50,8 +49,8 @@
       <file leaf-file-name="SnakeGame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SnakeGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6976744">
-              <caret line="34" column="68" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
+            <state vertical-scroll-proportion="0.5129959">
+              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -855,7 +854,13 @@
       <option name="project" value="LOCAL" />
       <updated>1475978592273</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Commit_20161009">
+      <created>1475999201936</created>
+      <option name="number" value="00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1475999201936</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -901,7 +906,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
-    <MESSAGE value="Commit_20160802" />
     <MESSAGE value="Commit_20160803" />
     <MESSAGE value="Commit_20160804" />
     <MESSAGE value="Commit_20160808" />
@@ -926,7 +930,8 @@
     <MESSAGE value="Commit_20161003" />
     <MESSAGE value="Commit_20161004" />
     <MESSAGE value="Commit_20161008" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit_20161008" />
+    <MESSAGE value="Commit_20161009" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit_20161009" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1314,8 +1319,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SnakeGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6976744">
-          <caret line="34" column="68" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
+        <state vertical-scroll-proportion="0.5129959">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
