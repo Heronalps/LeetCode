@@ -13,18 +13,13 @@ public class Test {
         // the length, minus that coefficient.
         // e.g. {0, 0, 0, 0, 10, 0, 20, 0, 30, 0 } => 5
 
-        int degree = coeffsHighToLow.length - 1;
-        for (int i=0; i<coeffsHighToLow.length; i++) {
-            if (coeffsHighToLow[i]!=0) {
-                return degree;
-            }
-            degree--;
-        }
         return 0;
     }
     public static void main(String[] args) {
 
-        System.out.println(degreeCoeffsHighToLow(new int[] {0, 0, 0, 0, 10, 0, 20, 0, 30, 0 }));
+        double i = 3.6;
+        int j = (int) i;
+        System.out.println((int) Math.random() * j);
     }
 
 }
