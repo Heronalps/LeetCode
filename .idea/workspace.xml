@@ -578,12 +578,6 @@
       <option name="number" value="Default" />
       <updated>1466972474999</updated>
     </task>
-    <task id="LOCAL-00012" summary="Commit_20160712">
-      <created>1468324804717</created>
-      <option name="number" value="00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1468324804717</updated>
-    </task>
     <task id="LOCAL-00013" summary="Commit_20160722">
       <created>1469205104855</created>
       <option name="number" value="00013" />
@@ -872,7 +866,13 @@
       <option name="project" value="LOCAL" />
       <updated>1477465994926</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Commit_20161027&#10;">
+      <created>1477551625735</created>
+      <option name="number" value="00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1477551625735</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -918,7 +918,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
-    <MESSAGE value="Commit_20160906" />
     <MESSAGE value="Commit_20160907" />
     <MESSAGE value="Commit_20160910" />
     <MESSAGE value="Commit_20160911" />
@@ -943,7 +942,8 @@
     <MESSAGE value="Commit_20161023&#10;" />
     <MESSAGE value="Commit_20161024&#10;" />
     <MESSAGE value="Commit_20161026&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit_20161026&#10;" />
+    <MESSAGE value="Commit_20161027&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit_20161027&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
