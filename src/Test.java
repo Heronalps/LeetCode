@@ -19,7 +19,8 @@ public class Test {
 
         double i = 3.6;
         int j = (int) i;
-        System.out.println((int) Math.random() * j);
+        //System.out.println((int) Math.random() * j);
+        System.out.println("foo".getClass());
     }
 
 }
