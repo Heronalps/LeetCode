@@ -20,7 +20,10 @@ public class Test {
         double i = 3.6;
         int j = (int) i;
         //System.out.println((int) Math.random() * j);
-        System.out.println("foo".getClass());
+        //System.out.println("foo".getClass());
+        int[][] array = new int[1][2];
+        System.out.println(array.length);
+        System.out.println(array[0].length);
     }
 
 }

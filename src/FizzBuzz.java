@@ -48,5 +48,7 @@ public class FizzBuzz {
 		for (String result : arr) {
 			System.out.println(result);
 		}
+		double a = 3;
+		System.out.println(a);
 	}
 }
