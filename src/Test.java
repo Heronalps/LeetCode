@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
@@ -15,15 +16,25 @@ public class Test {
 
         return 0;
     }
-    public static void main(String[] args) {
 
-        double i = 3.6;
-        int j = (int) i;
-        //System.out.println((int) Math.random() * j);
-        //System.out.println("foo".getClass());
-        int[][] array = new int[1][2];
-        System.out.println(array.length);
-        System.out.println(array[0].length);
+    public static String subsequencesAfter(String partialSubsequence, String word) {
+        if (word.isEmpty()) {
+            // base case
+            return partialSubsequence;
+        } else {
+            // recursive step
+            return subsequencesAfter(partialSubsequence, word.substring(1))
+                    + ","
+                    + subsequencesAfter(partialSubsequence + word.charAt(0), word.substring(1));
+        }
+    }
+
+    public static void main(String[] args) {
+        int counter = 0;
+        counter += 1;
+        System.out.println(counter);
+
+
     }
 
 }
