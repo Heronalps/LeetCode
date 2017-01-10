@@ -13,7 +13,7 @@ public class RepeatedSubstringPattern{
 						break;
 					}
 
-					if(j == len / i){
+					if(j == len / i - 1){
 						return true;
 					}
 				}
@@ -79,7 +79,7 @@ public class RepeatedSubstringPattern{
 
 	public static void main(String[] args) {
 
-		System.out.println(repeatedSubstringPattern4("aa"));
+		System.out.println(repeatedSubstringPattern("abab"));
 	}
 }
 
