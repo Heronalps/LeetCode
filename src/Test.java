@@ -7,23 +7,22 @@ import java.util.Collections;
  */
 public class Test {
 
-    private static class Node{
-        private int id;
-        private Node(int id){
-            this.id = id;
-        }
-        public String toString(){
-            return "node";
+    public static void fizzBuzz(int n) {
+        for(int i = 0; i < n + 1; i++) {
+            if(n % 3 == 0 && n % 5 == 0) {
+                System.out.println("FizzBuzz");
+            } else if (n % 3 == 0) {
+                System.out.println("Fizz");
+            } else if (n % 5 == 0) {
+                System.out.println("Buzz");
+            } else {
+                System.out.println(i);
+            }
         }
     }
 
     public static void main(String[] args) {
-        Test t = new Test();
-        Node n = new Node(5);
-        System.out.println(n.toString());
-        Graph g = new Graph();
-        g.addNode("nodeName");
-        //Graph.Node node = g.new Node("name");
+        fizzBuzz(20);
     }
 
 }
