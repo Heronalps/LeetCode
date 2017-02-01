@@ -33,7 +33,11 @@ public class GuessNumber {
     }
     public static void main(String[] args) {
     	System.out.println(guessNumber(10));
-    	int[] nums = null;
-    	System.out.println(nums == null);
+    	int m = 6;
+    	int power = 1;
+    	for (int i = 0; i < m; i++) {
+    		power = power * 2;
+    	}
+    	System.out.println(power);
     }
 }
