@@ -1,37 +1,63 @@
+import java.io.FileNotFoundException;
 import java.util.*;
 
 /**
  * Created by michael.zhang on 8/11/2016.
  */
 public class Test {
-    public static int partitionArray(int[] nums, int k) {
-        //Sanity check
-        if (nums == null || nums.length == 0) {
-            return 0;
+    private static String result = "";
+    private static int longest = 0;
+
+
+    public static String longestSub(String str) {
+        //Sanity Check
+        if (str == null || str.length() == 0) {
+            return null;
         }
-        int left = 0;
-        int right = nums.length - 1;
-        while (left <= right) {
-            while (left <= right && left < k) {
-                left++;
+        // char -> last appearing idnex map
+        Map<Character, Integer> map = new HashMap<>();
+        int index = 0;
+        StringBuilder stringBuilder = new StringBuilder();
+        while(index < str.length()) {
+            char current = str.charAt(index);
+            if (!map.containsKey(current)) {
+                map.put(current, index);
             }
-            while(left <= right && right >= k) {
-                right--;
+            if (map.size() > 3) {
+                index = getNextIndex(map);
+                String temp = stringBuilder.toString();
+                if (temp.length() > longest) {
+                    result = temp;
+                    longest = result.length();
+                }
+                stringBuilder = new StringBuilder();
+                map = new HashMap<>();
+                continue;
             }
-            int tmp = nums[left];
-            nums[left] = nums[right];
-            nums[right] = tmp;
-            left++;
-            right--;
+            map.put(current, index);
+            stringBuilder.append(current);
+            index++;
         }
-        return left;
+        return result;
     }
+
+
+
+    public static int getNextIndex(Map<Character, Integer> map) {
+        int min = Integer.MAX_VALUE;
+        for (Map.Entry<Character, Integer> entry : map.entrySet()){
+            if (entry.getValue() < min) {
+                min =entry.getValue();
+            }
+        }
+        return min + 1;
+    }
+
 
     public static void main(String[] args) {
-        int[] array = {7, 7, 9, 8, 6, 6, 8, 7, 9, 6, 8, 6};
-        partitionArray(array, 10);
-    }
 
+
+    }
 }
 
 

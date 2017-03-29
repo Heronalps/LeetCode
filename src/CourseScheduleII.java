@@ -4,15 +4,15 @@ import java.util.*;
  * Created by michaelzhang on 2/5/17.
  */
 public class CourseScheduleII {
-    public static int[] findOrder(int numCourses, int[][] prerequisites){
+    public static Object[] findOrder(int numCourses, int[][] prerequisites){
         //Sanity Check to do
         if (numCourses == 0) {
-            return new int[]{};
+            return new Object[]{};
         }
-        int[] result = new int[numCourses];
+        Object[] result = new Object[numCourses];
 // Mapping node to indegree
-        Map<Integer, ArrayList<Integer>> neighbors = new HashMap<>();
-        Map<Integer, Integer> indegree = new HashMap<>();
+        Map<Integer, ArrayList<Object>> neighbors = new HashMap<>();
+        Map<Object, Integer> indegree = new HashMap<>();
         // Initiate indegree
         for (int i = 0; i < numCourses; i++) {
             indegree.put(i, 0);
@@ -24,19 +24,19 @@ public class CourseScheduleII {
                     indegree.get(prerequisites[row][0]) + 1);
         }
 //BFS
-        Queue<Integer> queue = new LinkedList<>();
-        for (int node : indegree.keySet()) {
+        Queue<Object> queue = new LinkedList<>();
+        for (Object node : indegree.keySet()) {
             if (indegree.get(node) == 0) {
                 queue.offer(node);
             }
         }
         int nextIndex = 0;
         while(!queue.isEmpty()) {
-            int current = queue.poll();
+            Object current = queue.poll();
             result[nextIndex] = current;
             nextIndex++;
-            ArrayList<Integer> list = neighbors.get(current);
-            for (int neighbor : list) {
+            ArrayList<Object> list = neighbors.get(current);
+            for (Object neighbor : list) {
                 indegree.put(neighbor, indegree.get(neighbor) - 1);
                 if (indegree.get(neighbor) == 0) {
                     queue.offer(neighbor);
@@ -46,14 +46,14 @@ public class CourseScheduleII {
         if (nextIndex == numCourses) {
             return result;
         }
-        return new int[]{};
+        return new Object[]{};
     }
 
 
 
     public static void main(String[] args) {
         int[][] prerequisites = {{1,0},{0,1}};
-        for (int i : findOrder(2,prerequisites))
+        for (Object i : findOrder(2,prerequisites))
             System.out.println(i);
     }
 }

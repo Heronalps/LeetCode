@@ -31,9 +31,11 @@ public class findTheDifference{
         throw new IllegalArgumentException("No difference found!");
     }
 
+    /*
     public char findTheDifference2(String s, String t) {
         return (char) (s + t).chars().reduce(0, (x, y) -> x ^ y);
     }
+    */
     //运用Java8中IntStream新特性
 
     public char findTheDifference3(String s, String t) {
