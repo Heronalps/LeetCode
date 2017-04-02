@@ -1,13 +1,10 @@
-import java.io.FileNotFoundException;
 import java.util.*;
 
 /**
  * Created by michael.zhang on 8/11/2016.
  */
-public class Test {
+public class LongestSubWith3Char {
     private static String result = "";
-    private static int longest = 0;
-
 
     public static String longestSub(String str) {
         //Sanity Check
@@ -20,21 +17,18 @@ public class Test {
         StringBuilder stringBuilder = new StringBuilder();
         while(index < str.length()) {
             char current = str.charAt(index);
-            if (!map.containsKey(current)) {
-                map.put(current, index);
-            }
+            map.put(current, index);
+
             if (map.size() > 3) {
                 index = getNextIndex(map);
                 String temp = stringBuilder.toString();
-                if (temp.length() > longest) {
+                if (temp.length() > result.length()) {
                     result = temp;
-                    longest = result.length();
                 }
-                stringBuilder = new StringBuilder();
-                map = new HashMap<>();
+                stringBuilder.delete(0, stringBuilder.length());
+                map.clear();
                 continue;
             }
-            map.put(current, index);
             stringBuilder.append(current);
             index++;
         }
@@ -42,12 +36,11 @@ public class Test {
     }
 
 
-
     public static int getNextIndex(Map<Character, Integer> map) {
         int min = Integer.MAX_VALUE;
         for (Map.Entry<Character, Integer> entry : map.entrySet()){
             if (entry.getValue() < min) {
-                min =entry.getValue();
+                min = entry.getValue();
             }
         }
         return min + 1;
@@ -55,7 +48,8 @@ public class Test {
 
 
     public static void main(String[] args) {
-
+        String str = "abcabcddddeef";//abcabcabcddddcbcbeaf
+        System.out.println(longestSub(str)); //
 
     }
 }
