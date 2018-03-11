@@ -1,8 +1,9 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
-
-
-public class Solution {
+public class ValidTree {
 
     public boolean validTree(int n, int[][] edges) {
         List<List<Integer>> graph = new ArrayList<>();
@@ -35,11 +36,5 @@ public class Solution {
             if (!bool) return false;
         }
         return true;
-    }
-
-
-
-    public static void main(String[] args) throws Exception {
-        validTree(5, new int[][]{{0,1},{0,2},{2,3},{2,4}});
     }
 }

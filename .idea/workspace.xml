@@ -2,166 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c95f0f9b-46db-4f61-8a3f-d77f01a68c8c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BSTIterator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DoublyLinkedListNode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DropEggsII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Interval.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MaxStack.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/RandomizedCollection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Trie.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/UnionFind_Graph.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ZigzagIterator2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/AddString.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/AddString.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/ArrangeCoins.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/ArrangeCoins.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/AssignCookies.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/AssignCookies.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/BackPack.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/BackPack.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/BalancedTree.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/BalancedTree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/BinarySerialization.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/BinarySerialization.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/BinaryTreePaths.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/BinaryTreePaths.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/BinaryWatch.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/BinaryWatch.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/BuildPostOffice.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/BuildPostOffice.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/BuildPostOfficeII.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/BuildPostOfficeII.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/Child.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/Child.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/ClimbStairs.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/ClimbStairs.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/CloneGraph.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/CloneGraph.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/CombinationSum.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/CombinationSum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/ContainsDuplicate.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/ContainsDuplicate.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/ContinuousMedian$1.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/ContinuousMedian$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/ContinuousMedian.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/ContinuousMedian.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/CopyListWithRandomPointer.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/CopyListWithRandomPointer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/CountBits.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/CountBits.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/CountSegments.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/CountSegments.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/CourseSchedule.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/CourseSchedule.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/CourseScheduleII.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/CourseScheduleII.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/DeleteDuplicate.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/DeleteDuplicate.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/DirectedGraphNode.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/DirectedGraphNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/ExcelNumberToTitle.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/ExcelNumberToTitle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/ExcelTitleToNumber.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/ExcelTitleToNumber.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/ExpressionExpand.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/ExpressionExpand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/FindDisappearedNumbers.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/FindDisappearedNumbers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/FirstUniqChar.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/FirstUniqChar.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/FizzBuzz.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/FizzBuzz.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/Graph$1.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/Graph$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/Graph$Edge.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/Graph$Edge.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/Graph$Node.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/Graph$Node.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/Graph$State.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/Graph$State.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/Graph.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/Graph.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/GraphValidTree.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/GraphValidTree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/GuessNumber.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/GuessNumber.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/HammingDistance.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/HammingDistance.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/HammingWeight.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/HammingWeight.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/HasCycle.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/HasCycle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/Heap$1.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/Heap$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/Heap.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/Heap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/HouseRobber.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/HouseRobber.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/IntersectionArray.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/IntersectionArray.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/IntersectionArray2.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/IntersectionArray2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/IntersectionOfTwoArray.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/IntersectionOfTwoArray.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/IntervalSort$Interval.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/IntervalSort$Interval.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/IntervalSort.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/IntervalSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/IsHappy.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/IsHappy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/IslandPerimeter.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/IslandPerimeter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/KClosest$1.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/KClosest$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/KClosest.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/KClosest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/KthLargestElement.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/KthLargestElement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/LRUCache.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/LRUCache.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/Levelorder.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/Levelorder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/LevelorderBottom.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/LevelorderBottom.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/LinkedListRandomNode.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/LinkedListRandomNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/LinkedListRandomNode2.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/LinkedListRandomNode2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/ListNode.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/ListNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/LongestPalindrome.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/LongestPalindrome.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/LongestPalindromeSubstring.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/LongestPalindromeSubstring.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/LongestSubWith3Char.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/LongestSubWith3Char.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/LowestCommonAncestor.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/LowestCommonAncestor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/MajorityElement.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/MajorityElement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/MaxProfit.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/MaxProfit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/MaxSubarrayIII.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/MaxSubarrayIII.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/MergeSort.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/MergeSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/MergeTwoLists.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/MergeTwoLists.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/MinMoves.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/MinMoves.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/MyQueue.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/MyQueue.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/NumberOfBoomerangs.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/NumberOfBoomerangs.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/NumberOfIslandII$UnionFind.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/NumberOfIslandII$UnionFind.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/NumberOfIslandII.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/NumberOfIslandII.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/Pair.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/Pair.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/Palindrome.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/Palindrome.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/Parent.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/Parent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/PartitionList.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/PartitionList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/PartitionPalindrome.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/PartitionPalindrome.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/PascalTriangle.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/PascalTriangle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/PascalTriangleII.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/PascalTriangleII.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/PathSumI.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/PathSumI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/PathSumII.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/PathSumII.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/PathSumIII.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/PathSumIII.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/PathSumIISolution.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/PathSumIISolution.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/Permutation2.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/Permutation2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/PermutationI.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/PermutationI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/PermutationIndex.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/PermutationIndex.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/PermutationIndexII.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/PermutationIndexII.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/PlusOne.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/PlusOne.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/Point.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/Point.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/PointM.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/PointM.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/PowerOfFour.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/PowerOfFour.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/PowerOfThree.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/PowerOfThree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/PowerOfTwo.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/PowerOfTwo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/QuickSort.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/QuickSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/RandomListNode.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/RandomListNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/RansomNote.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/RansomNote.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/Rational.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/Rational.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/RecoverSortedArray.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/RecoverSortedArray.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/RemoveDuplicates.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/RemoveDuplicates.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/RemoveElement.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/RemoveElement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/RepeatedSubstringPattern.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/RepeatedSubstringPattern.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/ReverseLinkedList.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/ReverseLinkedList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/ReverseVowels.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/ReverseVowels.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/RomanToInt.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/RomanToInt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/RotateString.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/RotateString.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/SearchMatrix.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/SearchMatrix.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/SearchMatrixII.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/SearchMatrixII.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/ShuffleArray.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/ShuffleArray.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/SmallestRectangle.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/SmallestRectangle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/SnakeGame$Position.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/SnakeGame$Position.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/SnakeGame.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/SnakeGame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/Solution.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/Solution.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/StringPermutationII.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/StringPermutationII.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/SubarrayClosest$Pair.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/SubarrayClosest$Pair.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/SubarrayClosest.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/SubarrayClosest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/SubstringSearch.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/SubstringSearch.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/SumOfLeftLeave.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/SumOfLeftLeave.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/SwapPairs.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/SwapPairs.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/SymmetricTree.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/SymmetricTree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/ThreeSumClosest.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/ThreeSumClosest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/ToHex.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/ToHex.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/TopSort.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/TopSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/TrailingZeroes.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/TrailingZeroes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/TreeNode.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/TreeNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/UglyNumber.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/UglyNumber.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/UndirectedGraphNode.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/UndirectedGraphNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/ValidSudoku.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/ValidSudoku.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/Vector2D.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/Vector2D.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/WordBreak.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/WordBreak.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/WordLadder.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/WordLadder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/WordLadderII.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/WordLadderII.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/Zombie.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/Zombie.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/addDigits.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/addDigits.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/deleteNode.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/deleteNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/findTheDifference.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/findTheDifference.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/getSum.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/getSum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/invertTree.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/invertTree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/isAnagram.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/isAnagram.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/isSameTree.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/isSameTree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/maxDepth_Tree.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/maxDepth_Tree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/maxSubarray4.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/maxSubarray4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/maxSubarray5.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/maxSubarray5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/moveZeros.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/moveZeros.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/productExceptSelf.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/productExceptSelf.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/reverseKGroup.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/reverseKGroup.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/singleNumber.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/singleNumber.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/strStr2.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/strStr2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/subsetsWithDup.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/subsetsWithDup.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode/twoSum.class" afterPath="$PROJECT_DIR$/out/production/LeetCode/twoSum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Solution.java" afterPath="$PROJECT_DIR$/src/Solution.java" />
     </list>
@@ -190,8 +30,8 @@
       <file leaf-file-name="Solution.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="646">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -287,7 +127,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -1178,7 +1018,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="1" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1198,7 +1039,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4044796" sideWeight="0.4913917" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44927537" sideWeight="0.4913917" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1421,14 +1262,8 @@
           <properties />
           <option name="timeStamp" value="326" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Solution.java</url>
-          <line>24</line>
-          <properties />
-          <option name="timeStamp" value="436" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="437" />
+      <option name="time" value="439" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1437,7 +1272,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/output.txt" />
     <entry file="file://$PROJECT_DIR$/src/Tiger.java" />
     <entry file="file://$PROJECT_DIR$/src/Lion.java" />
     <entry file="file://$PROJECT_DIR$/src/BigCat.java" />
@@ -1749,10 +1583,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/addDigits.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-64">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="646">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
