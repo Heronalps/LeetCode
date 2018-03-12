@@ -1,9 +1,4 @@
-import java.util.*;
-
-
-
-public class Solution {
-
+public class SuperUglyNumber {
     public int nthSuperUglyNumber(int n, int[] primes) {
         int[] dp = new int[n];
         dp[0] = 1;
@@ -20,10 +15,4 @@ public class Solution {
         return dp[n - 1];
     }
 
-
-
-
-    public static void main(String[] args) throws Exception {
-        System.out.println(nthUglyNumber(10));
-    }
 }
