@@ -2,55 +2,43 @@ import java.util.*;
 
 
 
-public class Solution {
+class Solution {
 
-    public void gameOfLife(int[][] board) {
-        if (board.length == 0) {
-            return;
-        }
-        int rowLen = board.length;
-        int colLen = board[0].length;
-        for (int row = 0; row < rowLen; row++) {
-            for (int col = 0; col < colLen; col++) {
-                int lives = liveNeighbors(board, row, col, rowLen, colLen);
-                if (board[row][col] == 1 && (lives == 2 || lives == 3)) {
-                    board[row][col] = 3;
-                    //因为Default next state是0，所以只有2/3两种情况需要修改board值
-                }
-                if (board[row][col] == 0 && lives == 3) {
-                    board[row][col] = 2; // Reborn scenario
-                }
+        class Node {
+            Node left, right;
+            int val, sum, dup = 1;
+            public Node(int v, int s) {
+                val = v;
+                sum = s;
             }
         }
-        for (int row = 0; row < rowLen; row++) {
-            for (int col = 0; col < colLen; col++) {
-                board[row][col] >>= 1; //推进到下一个state
+        public List<Integer> countSmaller(int[] nums) {
+            Integer[] ans = new Integer[nums.length];
+            Node root = null;
+            for (int i = nums.length - 1; i >= 0; i--) {
+                root = insert(nums[i], root, ans, i, 0);
             }
+            return Arrays.asList(ans);
         }
-    }
-    private int liveNeighbors(int[][] board, int row, int col, int rowLen, int colLen) {
-        int lives = 0;
-        for (int i = Math.max(0, row - 1); i <= Math.min(rowLen - 1, row + 1); i++) {
-            //用max和min来规定上下界，值得学习
-            for (int j = Math.max(0, col - 1); j <= Math.min(colLen - 1, col + 1); j++) {
-                lives += board[i][j] & 1;
+        private Node insert(int num, Node node, Integer[] ans, int i, int preSum) {
+            if (node == null) {
+                node = new Node(num, 0);
+                ans[i] = preSum;
+            } else if (node.val == num) {
+                node.dup++;
+                ans[i] = preSum + node.sum;
+            } else if (node.val > num) {
+                node.sum++;
+                node.left = insert(num, node.left, ans, i, preSum);
+            } else {
+                node.right = insert(num, node.right, ans, i,
+                        preSum + node.dup + node.sum);
             }
+            return node;
         }
-        lives -= board[row][col]; //因为遍历了九宫格，所以剪掉自身值
-        return lives;
-    }
 
 
 
-
-
-
-
-
-    public static void main(String[] args) throws Exception {
-        List<String> list = new ArrayList<>();
-        list.add("a");
-        list.add("b");
-
-    }
 }
+
+
