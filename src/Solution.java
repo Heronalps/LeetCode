@@ -4,39 +4,38 @@ import java.util.*;
 
 class Solution {
 
-        class Node {
-            Node left, right;
-            int val, sum, dup = 1;
-            public Node(int v, int s) {
-                val = v;
-                sum = s;
-            }
-        }
-        public List<Integer> countSmaller(int[] nums) {
-            Integer[] ans = new Integer[nums.length];
-            Node root = null;
-            for (int i = nums.length - 1; i >= 0; i--) {
-                root = insert(nums[i], root, ans, i, 0);
-            }
-            return Arrays.asList(ans);
-        }
-        private Node insert(int num, Node node, Integer[] ans, int i, int preSum) {
-            if (node == null) {
-                node = new Node(num, 0);
-                ans[i] = preSum;
-            } else if (node.val == num) {
-                node.dup++;
-                ans[i] = preSum + node.sum;
-            } else if (node.val > num) {
-                node.sum++;
-                node.left = insert(num, node.left, ans, i, preSum);
-            } else {
-                node.right = insert(num, node.right, ans, i,
-                        preSum + node.dup + node.sum);
-            }
-            return node;
+
+    public List<Integer> topKFrequent(int[] nums, int k) {
+
+        List<Integer>[] bucket = new List[nums.length + 1];
+        Map<Integer, Integer> frequencyMap = new HashMap<Integer, Integer>();
+
+        for (int n : nums) {
+            frequencyMap.put(n, frequencyMap.getOrDefault(n, 0) + 1);
         }
 
+        for (int key : frequencyMap.keySet()) { // 用KeySet进行遍历
+            int frequency = frequencyMap.get(key);
+            if (bucket[frequency] == null) {
+                bucket[frequency] = new ArrayList<>();
+            }
+            bucket[frequency].add(key); // 这样就不用put步骤了
+        }
+
+        List<Integer> res = new ArrayList<>();
+
+        for (int pos = bucket.length - 1; pos >= 0 && res.size() < k; pos--) {
+            if (bucket[pos] != null) {
+                res.addAll(bucket[pos]);
+            }
+        }
+        return res.subList(0, k);
+        // 因为res.size() < k 在addAll之后才坚持，subList只返回K个元素。
+    }
+
+    public static void main(String[] args) {
+        List<Integer>[] list = new List<Integer>[5];
+    }
 
 
 }
