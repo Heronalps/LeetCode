@@ -18,7 +18,8 @@ class NumArray {
     }
 
     public int sumRange(int i, int j) {
-        return sum(j) - sum(i - 1); // i，j 均是 inclusive，所以i - 1
+        return sum(j) - sum(i - 1);
+        // i，j 均是 inclusive，所以i - 1
     }
 
     private void build(int[] nums) {
@@ -29,7 +30,9 @@ class NumArray {
 
     private int sum (int k) { // inclusive
         int sum = 0;
-        for (int i = k + 1; i > 0; i -= lowbit(i)) { // i = k + 1转化下标，累加所有根节点
+        for (int i = k + 1; i > 0; i -= lowbit(i)) {
+            // i = k + 1转化下标，累加所有根节点
+
             sum += BIT[i];
         }
         return sum;
