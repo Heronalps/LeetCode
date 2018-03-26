@@ -24,6 +24,14 @@ class Solution {
 
 
     public static void main(String[] args) {
-        canCross(new int[] {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17});
+
+        int[][] food = new int[][] {{1,2}, {3,4}};
+        List<int[]> kitchen = new LinkedList<>(Arrays.asList(food));
+        int[] a1 = {1,2};
+        int[] a2 = {1,2};
+        int[] a3 = {2,3};
+        System.out.println(a1 == a2);
+        System.out.println(Arrays.equals(a1, a2));
+        System.out.println(Arrays.equals(a1, a3));
     }
 }
