@@ -52,7 +52,7 @@ public class SnakeGame {
         }
         int incx = 0, incy = 0;
         switch (direction) {
-            case "U": incx = -1; incy = 0; break;//每一个按键操作，其实都是在对变量负值
+            case "U": incx = -1; incy = 0; break;//每一个按键操作，其实都是在对变量赋值
             case "L": incx = 0; incy = -1; break;
             case "R": incx = 0; incy = 1; break;
             case "D": incx = 1; incy = 0; break;
