@@ -2,35 +2,30 @@ import java.math.BigInteger;
 import java.util.*;
 
 class Solution {
-    public static List<List<Integer>> verticalOrder(TreeNode root) {
-        List<List<Integer>> result = new ArrayList<>();
-        inorder(root, 0, 0, result);
-        return result;
-    }
-    private static int inorder(TreeNode root, int column, int offset, List<List<Integer>> result) {
-        if (root == null) {
-            return offset;
+
+    public boolean isValidSerialization(String preorder) {
+        Stack<String> stack = new Stack<>();
+        String[] array = preorder.split(",");
+        for (String curr : array) {
+            while (curr.equals("#") && !stack.empty() && stack.peek().equals("#")) {
+                stack.pop();
+                if (stack.empty()) return false; // 如果两个#之前没有node，false
+                stack.pop();
+            }
+            stack.push(curr);
         }
-        if (column < offset) {
-            result.add(0, new ArrayList<>());
-            offset = column;
-        }
-        else if (column - offset == result.size()) {
-            result.add(new ArrayList<>());
-        }
-        result.get(column - offset).add(root.val);
-        int left = inorder(root.left, column - 1, offset, result);
-        inorder(root.right, column + 1, left, result);
-        return left;
+        return stack.size() == 1 && stack.peek().equals("#"); // 只剩一个#
     }
 
+
+
+
+
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(3);
-        root.left = new TreeNode(9);
-        root.left.left = new TreeNode(4);
-        root.right = new TreeNode(8);
-        root.right.right = new TreeNode(7);
-        verticalOrder(root);
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        System.out.println(oddEvenList(head));
     }
 
 }
