@@ -2,69 +2,94 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
 
-class Pair{
-    int key;
-    int value;
-    public Pair(int key, int value) {
+class DLNode {
+    DLNode prev;
+    DLNode next;
+    int key, val;
+    public DLNode(int key, int val) {
         this.key = key;
-        this.value = value;
+        this.val = val;
     }
-    @Override
-    public boolean equals(Object obj) {
-        Pair pair = (Pair) obj;
-        if (this.key == pair.key && this.value == pair.value) {
-            return true;
+    public void link(DLNode node) {
+        this.next = node;
+        node.prev = this;
+    }
+    public void remove() {
+        if (this.prev != null) {
+            this.prev.next = this.next;
         }
-        return false;
+        if (this.next != null) {
+            this.next.prev = this.prev;
+        }
+    }
+    public void addToHead(DLNode head) {
+        this.remove();
+        DLNode next = head.next;
+        head.link(this);
+        this.link(next);
+    }
+    public static int popFromTail (DLNode tail) {
+        if (tail.prev.prev == null) {
+            return -1;
+        }
+        int key = tail.prev.key;
+        tail.prev.remove();
+        return key;
     }
 }
 
-public class LRUCache {
-    LinkedList<Pair> list;
-    int capacity;
-    Map<Integer, Pair> map;
+class LRUCache {
 
-    // @param capacity, an integer
+    Map<Integer, DLNode> map;
+    DLNode head, tail;
+    int capacity, currLen;
     public LRUCache(int capacity) {
-        // write your code here
         map = new HashMap<>();
-        list = new LinkedList<>();
+        head = new DLNode(-1, -1);
+        tail = new DLNode(-1, -1);
+        head.link(tail);
         this.capacity = capacity;
     }
 
-    // @return an integer
     public int get(int key) {
-        // write your code here
-        if (map.containsKey(key)){
-            Pair current = map.get(key);
-            list.remove(current);
-            list.offer(current);
-            return current.value;
+        if (map.containsKey(key)) {
+            DLNode n = map.get(key);
+            n.addToHead(head);
+            return map.get(key).val;
         }
-
         return -1;
     }
 
-    // @param key, an integer
-    // @param value, an integer
-    // @return nothing
-    public void set(int key, int value) {
-        // write your code here
+    public void put(int key, int value) {
+        DLNode node = map.getOrDefault(key, new DLNode(key, value));
         if (map.containsKey(key)) {
-            Pair current = map.get(key);
-            list.remove(current);
-            current.value = value;
-            list.offer(current);
-            return;
+            node.val = value;
+        } else {
+            currLen++;
+            map.put(key, node);
+            if (currLen > capacity) {
+                map.remove(DLNode.popFromTail(tail));
+                currLen--;
+            }
         }
+        node.addToHead(head);
+    }
+    public static void main(String[] args) {
+        LRUCache l = new LRUCache(2);
+        l.put(2,1);
 
-        if (list.size() == capacity) {
-            Pair del = list.poll();
-            map.remove(del.key);
-        }
+        l.put(1,1);
+        l.put(2,3);
+        l.put(4,1);
 
-        Pair newPair = new Pair(key, value);
-        list.offer(newPair);
-        map.put(key, newPair);
+        l.get(1);
+        l.get(2);
     }
 }
+
+/**
+ * Your LRUCache object will be instantiated and called as such:
+ * LRUCache obj = new LRUCache(capacity);
+ * int param_1 = obj.get(key);
+ * obj.put(key,value);
+ */

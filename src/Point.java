@@ -1,9 +1,24 @@
+import java.util.Objects;
+
 /**
  * Created by michaelzhang on 2/1/17.
  */
-public class Point {
-         public int x, y;
-         public Point() { x = 0; y = 0; }
-         public Point(int a, int b) { x = a; y = b; }
+class Point {
+    int x, y;
+
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        Point point = (Point) obj;
+        return this.x == point.x && this.y == point.y;
+    }
+    @Override
+    public int hashCode() {
+        return Objects.hash(x, y);
+    }
 }
 
